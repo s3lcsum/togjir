@@ -1,0 +1,6 @@
+*
+!.env.example
+!togjir.ts
+!package.json
+!.gitignore
+!README.md

@@ -1,0 +1,27 @@
+{
+  "name": "togjir",
+  "version": "0.0.1",
+  "description": "Synchronize time entries from toggl with jira tickets",
+  "main": "togjir.ts",
+  "author": "s3lcusm",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "dotenv": "^8.0.0",
+    "inquirer": "^6.5.0",
+    "inquirer-datepicker-prompt": "^0.4.2",
+    "jira-connector": "^2.15.7",
+    "moment": "^2.24.0",
+    "request": "^2.88.0",
+    "yargs": "^13.3.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/inquirer": "^6.0.3",
+    "@types/moment": "^2.13.0",
+    "@types/node": "^12.6.8",
+    "@types/progress": "^2.0.3",
+    "@types/request": "^2.48.2",
+    "@types/yargs": "^13.0.0"
+  }
+}
