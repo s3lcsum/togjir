@@ -78,6 +78,12 @@ async function getTimeEntries(since): Promise<TimeEntry[]> {
         }, (error, response, body) => {
             if (error) reject(error);
 
+            if (response.statusCode === 403) {
+                echo(chalk.red('Your TOGGL_TOKEN is invalid, can’t download your time entires.'))
+                reject(response);
+                return;
+            }
+
             echo(chalk.yellow(`Downloaded ${body.length} time entries.`));
             resolve(body)
         })
